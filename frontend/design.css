@@ -1,0 +1,32 @@
+/* defaults */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+/* dashboard-body */
+.dashboard-body {
+	height: 100vh;
+	background-color: #0f0f0f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dashboard-body .dashboard {
+	background-color: #1e1e1e;
+	width: 320px;
+	height: 240px;
+	padding: 3px;
+}
+
+/* TEMP */
+.dashboard-body .dashboard h2 {
+	color: #fff;
+}
