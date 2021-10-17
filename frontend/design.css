@@ -24,9 +24,28 @@ body {
 	width: 320px;
 	height: 240px;
 	padding: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-/* TEMP */
-.dashboard-body .dashboard h2 {
+.dashboard-body .dashboard .rpm-circles {
+	display: flex;
+	justify-content: space-between;
+}
+
+.dashboard-body .dashboard .rpm-circles .circle {
+	padding: 10px;
+	background-color: #f3f3f3;
+	border-radius: 50%;
+	margin: 0.5px;
+}
+
+.dashboard-body .dashboard .rpm-number {
+	margin-top: 15px;
+}
+
+.dashboard-body .dashboard .rpm-number h1 {
+	font-size: 4rem;
 	color: #fff;
 }
