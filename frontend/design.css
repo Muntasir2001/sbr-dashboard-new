@@ -29,6 +29,8 @@ body {
 	align-items: center;
 }
 
+/* rpm */
+
 .dashboard-body .dashboard .rpm-circles {
 	display: flex;
 	justify-content: space-between;
@@ -42,10 +44,57 @@ body {
 }
 
 .dashboard-body .dashboard .rpm-number {
-	margin-top: 15px;
+	margin-top: 8px;
 }
 
 .dashboard-body .dashboard .rpm-number h1 {
-	font-size: 4rem;
+	font-size: 5rem;
 	color: #fff;
+}
+
+/* bottom readings */
+.dashboard-body .dashboard .readings {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.dashboard-body .dashboard .readings h4 {
+	color: #ffff00;
+	padding-bottom: 5px;
+	font-size: 0.9rem;
+}
+
+.dashboard-body .dashboard .readings p {
+	font-size: 0.9rem;
+}
+
+.dashboard-body .dashboard .readings .middle-line {
+	border: 1px solid #fff;
+}
+
+.dashboard-body .dashboard .readings .left,
+.dashboard-body .dashboard .readings .right {
+	width: 100%;
+}
+
+.dashboard-body .dashboard .readings .left .oil-pressure,
+.dashboard-body .dashboard .readings .left .fuel-pressure,
+.dashboard-body .dashboard .readings .right .oil-temp,
+.dashboard-body .dashboard .readings .right .coolant-temp {
+	padding-left: 15px;
+}
+
+.dashboard-body .dashboard .readings .left .oil-pressure {
+	margin-top: 10px;
+	border-top: 1px solid #fff;
+	padding-top: 10px;
+}
+
+.dashboard-body .dashboard .readings .right .oil-temp {
+	margin-top: 10px;
+	border-top: 1px solid #fff;
+	padding-top: 10px;
 }
