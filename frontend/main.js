@@ -13,3 +13,6 @@ const circle12 = document.querySelector('.circle-12');
 const circle13 = document.querySelector('.circle-13');
 const circle14 = document.querySelector('.circle-14');
 const circle15 = document.querySelector('.circle-15');
+
+eel.expose(updateRPM);
+function updateRPM() {}
