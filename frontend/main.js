@@ -13,6 +13,86 @@ const circle12 = document.querySelector('.circle-12');
 const circle13 = document.querySelector('.circle-13');
 const circle14 = document.querySelector('.circle-14');
 const circle15 = document.querySelector('.circle-15');
+const rpm = document.querySelector('.rpm');
+
+function resetRPM() {
+	circle1.style.background = '#F3F3F3';
+	circle2.style.background = '#F3F3F3';
+	circle3.style.background = '#F3F3F3';
+	circle4.style.background = '#F3F3F3';
+	circle5.style.background = '#F3F3F3';
+	circle6.style.background = '#F3F3F3';
+	circle7.style.background = '#F3F3F3';
+	circle8.style.background = '#F3F3F3';
+	circle9.style.background = '#F3F3F3';
+	circle10.style.background = '#F3F3F3';
+	circle11.style.background = '#F3F3F3';
+	circle12.style.background = '#F3F3F3';
+}
 
 eel.expose(updateRPM);
-function updateRPM() {}
+function updateRPM(rpmValue) {
+	console.log('working');
+	rpm.textContent = rpmValue;
+
+	if (rpmValue >= 5) {
+		console.log(rpmValue);
+		circle1.style.background = '#198C19';
+		circle2.style.background = '#198C19';
+	}
+
+	if (rpmValue >= 10) {
+		console.log(rpmValue);
+		circle3.style.background = '#198C19';
+		circle4.style.background = '#198C19';
+	}
+
+	if (rpmValue >= 15) {
+		console.log(rpmValue);
+		circle5.style.background = '#198C19';
+		circle6.style.background = '#FF0000';
+	}
+
+	if (rpmValue >= 20) {
+		console.log(rpmValue);
+		circle7.style.background = '#FF0000';
+		circle8.style.background = '#FF0000';
+	}
+
+	if (rpmValue >= 25) {
+		console.log(rpmValue);
+		circle9.style.background = '#FF0000';
+		circle10.style.background = '#FF0000';
+	}
+
+	if (rpmValue >= 30) {
+		console.log(rpmValue);
+		resetRPM();
+		circle1.style.background = '#198C19';
+		circle2.style.background = '#198C19';
+	}
+
+	if (rpmValue >= 35) {
+		console.log(rpmValue);
+		circle3.style.background = '#198C19';
+		circle4.style.background = '#198C19';
+	}
+
+	if (rpmValue >= 40) {
+		console.log(rpmValue);
+		circle5.style.background = '#198C19';
+		circle6.style.background = '#FF0000';
+	}
+
+	if (rpmValue >= 45) {
+		console.log(rpmValue);
+		circle7.style.background = '#FF0000';
+		circle8.style.background = '#FF0000';
+	}
+
+	if (rpmValue >= 50) {
+		console.log(rpmValue);
+		circle9.style.background = '#FF0000';
+		circle10.style.background = '#FF0000';
+	}
+}
