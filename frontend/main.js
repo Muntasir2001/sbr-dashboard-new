@@ -16,18 +16,18 @@ const circle15 = document.querySelector('.circle-15'); // 0000FF
 const rpm = document.querySelector('.rpm');
 
 function resetRPM() {
-	circle1.style.background = '#F3F3F3';
-	circle2.style.background = '#F3F3F3';
-	circle3.style.background = '#F3F3F3';
-	circle4.style.background = '#F3F3F3';
-	circle5.style.background = '#F3F3F3';
-	circle6.style.background = '#F3F3F3';
-	circle7.style.background = '#F3F3F3';
-	circle8.style.background = '#F3F3F3';
-	circle9.style.background = '#F3F3F3';
-	circle10.style.background = '#F3F3F3';
-	circle11.style.background = '#F3F3F3';
-	circle12.style.background = '#F3F3F3';
+	circle1.style.background = '#e5e5e5';
+	circle2.style.background = '#e5e5e5';
+	circle3.style.background = '#e5e5e5';
+	circle4.style.background = '#e5e5e5';
+	circle5.style.background = '#e5e5e5';
+	circle6.style.background = '#e5e5e5';
+	circle7.style.background = '#e5e5e5';
+	circle8.style.background = '#e5e5e5';
+	circle9.style.background = '#e5e5e5';
+	circle10.style.background = '#e5e5e5';
+	circle11.style.background = '#e5e5e5';
+	circle12.style.background = '#e5e5e5';
 }
 
 function resetNextRPMBars(currentRPMCircle) {
@@ -155,6 +155,28 @@ function resetNextRPMBars(currentRPMCircle) {
 		circle14.style.background = '#e5e5e5';
 		circle15.style.background = '#e5e5e5';
 	}
+
+	if (currentRPMCircle === 11) {
+		circle12.style.background = '#e5e5e5';
+		circle13.style.background = '#e5e5e5';
+		circle14.style.background = '#e5e5e5';
+		circle15.style.background = '#e5e5e5';
+	}
+
+	if (currentRPMCircle === 12) {
+		circle13.style.background = '#e5e5e5';
+		circle14.style.background = '#e5e5e5';
+		circle15.style.background = '#e5e5e5';
+	}
+
+	if (currentRPMCircle === 13) {
+		circle14.style.background = '#e5e5e5';
+		circle15.style.background = '#e5e5e5';
+	}
+
+	if (currentRPMCircle === 14) {
+		circle15.style.background = '#e5e5e5';
+	}
 }
 
 eel.expose(updateRPM);
@@ -164,64 +186,75 @@ function updateRPM(rpmValue) {
 
 	if (rpmValue > 867) {
 		circle1.style.background = '#198C19';
-		circle2.style.background = '#198C19';
+		resetNextRPMBars(1);
 	}
 
 	if (rpmValue > 1734) {
 		circle2.style.background = '#198C19';
+		resetNextRPMBars(2);
 	}
 
 	if (rpmValue > 2601) {
 		circle3.style.background = '#198C19';
+		resetNextRPMBars(3);
 	}
 
 	if (rpmValue > 3468) {
 		circle4.style.background = '#198C19';
+		resetNextRPMBars(4);
 	}
 
 	if (rpmValue > 4335) {
 		circle5.style.background = '#198C19';
+		resetNextRPMBars(5);
 	}
 
 	if (rpmValue > 5202) {
 		circle6.style.background = '#FF0000';
+		resetNextRPMBars(6);
 	}
 
 	if (rpmValue > 6069) {
-		console.log(rpmValue);
 		circle7.style.background = '#FF0000';
+		resetNextRPMBars(7);
 	}
 
 	if (rpmValue > 6936) {
 		circle8.style.background = '#FF0000';
+		resetNextRPMBars(8);
 	}
 
 	if (rpmValue > 7803) {
 		circle9.style.background = '#FF0000';
+		resetNextRPMBars(9);
 	}
 
 	if (rpmValue > 8670) {
 		circle10.style.background = '#FF0000';
+		resetNextRPMBars(10);
 	}
 
 	if (rpmValue > 9537) {
-		console.log(rpmValue);
 		circle11.style.background = '#0000FF';
+		resetNextRPMBars(11);
 	}
 
 	if (rpmValue > 10404) {
 		circle12.style.background = '#0000FF';
+		resetNextRPMBars(12);
 	}
 
 	if (rpmValue > 11271) {
 		circle13.style.background = '#0000FF';
+		resetNextRPMBars(13);
 	}
 
 	if (rpmValue > 12138) {
 		circle14.style.background = '#0000FF';
+		resetNextRPMBars(14);
 	}
 
-	if (rpmValue > 13005) {
+	if (rpmValue > 13000) {
 		circle15.style.background = '#0000FF';
 	}
 }
