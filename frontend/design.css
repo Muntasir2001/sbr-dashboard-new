@@ -21,8 +21,8 @@ body {
 
 .dashboard-body .dashboard {
 	background-color: #1e1e1e;
-	width: 320px;
-	height: 240px;
+	width: 370px;
+	height: 250px;
 	padding: 3px;
 	display: flex;
 	flex-direction: column;
@@ -34,6 +34,7 @@ body {
 .dashboard-body .dashboard .rpm-circles {
 	display: flex;
 	justify-content: space-between;
+	gap: 2.5px;
 }
 
 .dashboard-body .dashboard .rpm-circles .circle {
