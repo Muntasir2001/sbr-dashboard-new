@@ -17,12 +17,13 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/* flex-direction: column; */
 }
 
 .dashboard-body .dashboard {
 	background-color: #1e1e1e;
 	width: 370px;
-	height: 250px;
+	height: 270px;
 	padding: 3px;
 	display: flex;
 	flex-direction: column;
@@ -59,7 +60,7 @@ body {
 	justify-content: space-between;
 	width: 100%;
 	color: #fff;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .dashboard-body .dashboard .readings h4 {
@@ -98,4 +99,11 @@ body {
 	margin-top: 10px;
 	border-top: 1px solid #fff;
 	padding-top: 10px;
+}
+
+/* full screen icon */
+.dashboard-body .dashboard .fullscreen-icon img {
+	width: 20px;
+	align-self: flex-end;
+	margin-top: 10px;
 }
