@@ -112,3 +112,7 @@ body {
 .dashboard-body .dashboard .fullscreen-icon img {
 	width: 20px;
 }
+
+.dashboard-body .dashboard .fullscreen-icon:hover {
+	cursor: pointer;
+}

@@ -14,7 +14,7 @@ python3 main.py
 
 ## File structure
 
--  'frontend' has the frontend files and codes/
+-  'frontend' has the frontend files and codes.
 -  'backend has python scripts for extracting data from the ECU and for processing it.
 -  'main.py' in the root directory is the main python file for starting the whole dashboard app.
 
