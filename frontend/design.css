@@ -23,7 +23,7 @@ body {
 .dashboard-body .dashboard {
 	background-color: #1e1e1e;
 	width: 370px;
-	height: 270px;
+	height: 260px;
 	padding: 3px;
 	display: flex;
 	flex-direction: column;
@@ -47,6 +47,7 @@ body {
 
 .dashboard-body .dashboard .rpm-number {
 	margin-top: 8px;
+	text-align: center;
 }
 
 .dashboard-body .dashboard .rpm-number h1 {
@@ -102,8 +103,12 @@ body {
 }
 
 /* full screen icon */
-.dashboard-body .dashboard .fullscreen-icon img {
-	width: 20px;
+.dashboard-body .dashboard .fullscreen-icon {
 	align-self: flex-end;
 	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.dashboard-body .dashboard .fullscreen-icon img {
+	width: 20px;
 }
