@@ -1,13 +1,8 @@
-import updateRPMBar from './updateRPMBar.js';
-import updateRPMValue from './updateRPMValue.js';
-// import resetRPM from './resetRPM.js';
-
-const rpm = document.querySelector('.rpm');
+import updateRPMBar from './rpm/updateRPMBar.js';
+import updateRPMValue from './rpm/updateRPMValue.js';
 
 eel.expose(updateRPM);
 function updateRPM(rpmValue) {
-	// rpm.textContent = rpmValue;
-
 	updateRPMValue(rpmValue);
 	updateRPMBar(rpmValue);
 }
